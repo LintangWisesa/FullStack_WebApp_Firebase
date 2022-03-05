@@ -2,9 +2,68 @@
 
 # __Full Stack Web App Using Firebase__
 
-<!-- [![Video](https://img.youtube.com/vi/kuY-m6id4F4/0.jpg)](https://youtu.be/kuY-m6id4F4) -->
+[![Video](https://img.youtube.com/vi/qpGc5YVJLqY/0.jpg)](https://www.youtube.com/watch?v=qpGc5YVJLqY)
 
-Firebase is a platform developed by Google for creating mobile and web applications. It was originally an independent company founded in 2011. In 2014, Google acquired the platform and it is now their flagship offering for app development.
+__[Firebase](https://firebase.google.com/)__ is a platform developed by Google for creating mobile and web applications. It was originally an independent company founded in 2011. In 2014, Google acquired the platform and it is now their flagship offering for app development.
+
+__⭐ Requirements:__
+- 💳 [Firebase](https://firebase.google.com/) account
+- 💳 [Google Cloud Platform](https://cloud.google.com/) account
+- 💿 [Node.js](https://nodejs.org/en/) (including npm)
+- 📋 [Visual Studio Code](https://code.visualstudio.com/) or any code editor
+- 💻 [Postman](https://www.postman.com/) or any HTTP client tools
+
+__⭐ How to use this repo:__
+
+1. Create Firebase project then create database on Firebase Firestore with a collection & an initial document. After that setup project permission on Google Cloud Platform IAM (Identity Access Management). For more detail steps, follow the tutorial video (in Bahasa).
+
+2. Clone this repo:
+
+    ```bash
+    $ git clone https://github.com/LintangWisesa/FullStack_WebApp_Firebase.git
+
+    $ cd FullStack_WebApp_Firebase
+    ```
+3. Setup backend: first insert your Google Cloud Platform credential key (`.json`) inside `backend/functions/config/key.json` then install all dependencies:
+
+    ```bash
+    $ cd backend/functions
+
+    $ npm i
+    ```
+    Run locally using Firebase serve on backend dir:
+
+    ```bash
+    $ cd backend
+
+    $ firebase serve
+    ```
+    If you want to deploy it on Firebase Functions, make sure you have Firebase Blaze Plan (Pay as You Go) then execute:
+
+    ```bash
+    $ cd backend
+
+    $ firebase deploy
+    ```
+
+4. Setup frontend and run locally:
+
+    ```bash
+    $ cd frontend
+
+    $ npm i
+
+    $ npm start
+    ```
+    If you want to deploy it on Firebase hosting, make sure you have build the app.
+
+    ```bash
+    $ npm run build
+
+    $ firebase deploy
+    ```
+
+__⭐ Enjoy!__
 
 <hr>
 
